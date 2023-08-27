@@ -142,22 +142,25 @@
 .theme-right {
     width: 45%;
     height: 50vh;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: 50%;
     padding: 2vw;
 }
 
-.img {
+.container1-img {
     width: 350px;
     height: 430px;
-    border-radius: 40% 0 30% 0;
-    transform: rotate(15deg);
+    border-radius:50px;
+    box-shadow: 5px 0px 20px 16px rgba(9, 9, 11, 0.7);    transform: scale(0.5);
+    transition: transform 2s ease, opacity 3s ease;
 }
 
-.img:hover {
-    transform: rotate(0deg);
-    transition: 1s ease;
+.container1-img:hover{
+    box-shadow: -1px 14px 20px 20px rgba(9, 9, 11, 0.7);
+   transform: scale(1);
+   transition: 1s ease;
 }
+
 
 /* style for container 2 */
 .container2 {
@@ -326,7 +329,7 @@ span {
     width: 80%;
     margin: 0 auto;
     padding: 3vw;
-    height: 95vh;
+    height: 100vh;
 }
 
 .container4-icon-card {
@@ -338,10 +341,12 @@ span {
     margin-right: 10px;
     padding: 5px;
     top: 5vh;
+    margin-bottom: 80px;
 }
 
 .container4-card-image {
     position: relative;
+    border-radius:50%;
     width: 55%;
     height: 55%;
     left: 6vw;
@@ -499,10 +504,9 @@ input[type="submit"] {
 .container8-footer {
     top: -17vh;
     margin: 0 auto;
-    margin-bottom: 0;
     position: relative;
     width: 80%;
-    height: 80vh;
+    height: 70vh;
     background-color: whitesmoke;
     padding: 3vw;
 }
@@ -526,17 +530,18 @@ input[type="submit"] {
 }
 
 .contact-icon {
-    width: 35px;
-    height: 35px;
+    position: relative;
+    top:0;
+    width: 50px;
+    height: 50px;
     border: none;
     border-radius: 45%;
-    margin: 30px 10px 10px;
+    margin: 30px 10px 0 10px;
 }
 
 .contact-icon:hover {
-    width: 50px;
-    height: 50px;
-    transition: 1s ease;
+   top:-10px;
+    transition: .5s ease;
 }
 
 .quick-reference-section {
@@ -567,4 +572,81 @@ input[type="submit"] {
 
 .quick-reference-section h5 a:not(:hover) {
     color: rgb(80, 78, 78);
+}
+
+.bottom-section {
+    clear: both;
+    background-color: rgb(219, 218, 218);
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 2vh 3vw 2vh;
+    height: 95px;
+    margin: 0 auto;
+    top: 20%;
+    left: -3.8%;
+}
+
+.bottom-section strong,
+.bottom-section p {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    line-height: 1.5;
+}
+
+.bottom-section p a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(85, 85, 240);
+}
+
+/* style for go to top button */
+.go-to-top {
+    z-index: 1;
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    width: 40px;
+    height: 40px;
+    padding: 5px 5px 5px 5px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    color: rgb(255 255 255);
+    background-color: rgb(192 191 191);
+    box-shadow: -1px 0px 20px 6px rgb(0 0 0);
+}
+
+.go-to-top:hover {
+    width: 65px;
+    background-color: rgb(219 218 218);
+    height: 65px;
+    transform: rotate(360deg);
+    box-shadow: 2px 1px 20px 9px rgb(0 0 0);
+    transition: 1s ease;
+    color: #413c3c;
+    font-size: 40px;
+}
+
+/*  style for the video tag used in about us section  */
+video {
+    position: relative;
+    width: 1900px;
+    height: 640px;
+    left:-15.8%;
+}
+
+/* style for redirect pafe  */
+/* to be changed in the future  */
+.redirect{
+    background-color: rgba(255, 255, 255, 0.356);
+  backdrop-filter: blur(15px);
+    opacity:;
+    position:absolute;
+        border:none;
+    border-radius:20px;
+    top:10%;
+left:5%;
 }

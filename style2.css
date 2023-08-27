@@ -40,6 +40,17 @@ a {
     font-size: 20px;
 }
 
+.left-img{
+    display:block;
+    width:250px;
+    height:auto;
+    margin:0 auto;
+}
+
+.left-img:hover{
+    width:350px;
+   transition: all 1s ease;
+}
 /*  for right side of the form  */
 .right {
     width: 450px;
@@ -127,3 +138,20 @@ label {
     margin-left:60px;
     margin-top:50px;
 }
+
+/*  style for home button  */
+
+.home-icon{
+    position:relative;
+    top:10px;
+    left:20px;
+    width:40px;
+    height:40px;
+    display: block;
+   }
+
+.home-icon:hover{
+    top:5px;
+    border-bottom:2px solid black;
+    transition:1s ease;
+ }
