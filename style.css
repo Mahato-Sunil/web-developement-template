@@ -2,6 +2,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
 /* style for the first container  */
 .container1 {
     background-color: whitesmoke;
@@ -152,7 +153,7 @@
     height: 430px;
     border-radius:50px;
     box-shadow: 5px 0px 20px 16px rgba(9, 9, 11, 0.7);    transform: scale(0.5);
-    transition: transform 2s ease, opacity 3s ease;
+    transition: transform 1.5s ease, opacity 3s ease;
 }
 
 .container1-img:hover{
@@ -567,7 +568,7 @@ input[type="submit"] {
     font-size: 20px;
     font-weight: bold;
     border-bottom: 2px solid rgb(148, 144, 144);
-    transition: 1s ease;
+    transition: 0.5s ease;
 }
 
 .quick-reference-section h5 a:not(:hover) {
